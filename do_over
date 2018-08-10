@@ -1,5 +1,6 @@
 #!/usr/bin/env ruby
 
+#Load library
 require_relative '../lib/turn'
 
 #Set up board
@@ -10,3 +11,13 @@ puts "Welcome to Tic Tac Toe!"
 
 #Display Board 
 display_board(board)
+
+#Turn board
+turn(board)
+
+#Stores input
+input = gets.strip
+
+#Creates index from input 
+index = input_to_index(input)
+
